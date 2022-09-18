@@ -17,3 +17,4 @@ def read_and_write():
 
 if __name__ == '__main__':
     read_and_write()
+    
