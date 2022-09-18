@@ -1,4 +1,3 @@
-
 import sys
 
 def letter_starter():
@@ -10,10 +9,10 @@ def letter_starter():
 				name = line[i].split('\t')[0]
 		if name == '':
 			print('Error email')
-		else:
-			print(f'Dear {name}, welcome to our team. We are sure that it will be a pleasure to work with you. That’s a precondition for the professionals that our company hires.')
+			return
+		print(f'Dear {name}, welcome to our team. We are sure that it will be a pleasure to work with you. That’s a precondition for the professionals that our company hires.')
 
 if __name__ == '__main__':
-	if len (sys.argv) != 2:
-		raise Exception("Error argument")
-	letter_starter()
+    if len (sys.argv) != 2:
+        raise Exception("Error argument")
+    letter_starter()
